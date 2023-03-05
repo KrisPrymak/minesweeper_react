@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.app__content {
+  border: 15px solid #bdbdbd;
+  background-color: #bdbdbd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.field, .menu {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #696969;
+  border-bottom: 3px solid #FFFFFF;
+  border-right: 3px solid #FFFFFF;
 }
+
+.field {
+  width: 272px;
+  background-color: #bfbfbf;
+  margin-top: 10px;
+}
+
+.field__cell {
+  height: 17px;
+  width: 17px;
+  background: url('./media/sprite.png') no-repeat;
+  background-position-y: -50px;
+}
+
+.menu {
+  align-items: center;
+  background-color: #a9a9a9;
+  padding: 10px 5px;
+}
+
+.counter {
+  display: flex;
+  width: 39px;
+}
+
+.counter__num {
+  background: url('./media/sprite.png') no-repeat;
+  width: 13px;
+  height: 23px;
+}
+
+.main-button {
+  background: url('./media/sprite.png') no-repeat;
+  background-position-x: 0;
+  background-position-y: -24px;
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+}
+
+.onMousePushButton {
+  background-position-x: -54px;
+}
+
+.isWonButton {
+  background-position-x: -81px;
+}
+
+.isLoseButton {
+  background-position-x: -108px;
+}
+
+.onMouseDownButton {
+  background-position-x: -27px;
+}
+
